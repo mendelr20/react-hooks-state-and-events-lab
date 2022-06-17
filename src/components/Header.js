@@ -1,11 +1,11 @@
-import react, { useState }from "react";
+import react from "react";
 
-export default function Header({dark, handleDarkModeClick}){
+export default function Header(props){
     return (
         <header>
             <h2>Shopster</h2>
-            <button onClick={handleDarkModeClick}>
-            {dark ? "Dark" : "Light"} Mode
+            <button onClick={props.onDarkModeClick}>
+            {props.isDarkMode ? "Dark" : "Light"} Mode
             </button>
         </header>
     )

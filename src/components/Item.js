@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Item({ name, category }) {
+export default function Item({ name, category }) {
   const [isInCart, setIsInCart] = useState(false);
 
   function handleAddToCartClick() {
@@ -21,4 +21,3 @@ function Item({ name, category }) {
   );
 }
 
-export default Item;
